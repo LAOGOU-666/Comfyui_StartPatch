@@ -40,7 +40,7 @@
 1. 进入您的 ComfyUI 安装目录下的 `custom_nodes` 文件夹
 2. 执行以下命令：
 ```
-git clone https://github.com/LAOGOU-666/comfyui-server-patch.git
+git clone https://github.com/LAOGOU-666/Comfyui_StartPatch.git
 ```
 
 ## 使用说明
