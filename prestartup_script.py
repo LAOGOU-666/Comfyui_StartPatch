@@ -38,8 +38,11 @@ def check_and_patch_server():
             return False
             
         # 准备补丁代码，确保正确的缩进
-        patch_code = '''        from custom_nodes.Comfyui_StartPatch import server_patch
-        server_patch.apply_patch(self)
+        patch_code = '''        try:
+            from custom_nodes.Comfyui_StartPatch import server_patch
+            server_patch.apply_patch(self)
+        except ImportError:
+            pass
 
 '''
         
